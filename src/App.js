@@ -31,10 +31,17 @@ class App extends Component {
     }
     return (
       <div className="App">       
-        <Subject
+        {/* <Subject
           title={this.state.subject.title}
           sub={this.state.subject.sub}>
-        </Subject>        
+        </Subject> */}
+        <header>
+          <h1><a href="./" onClick={function(e){
+            alert('안녕!!');
+            e.preventDefault();
+          }}>{this.state.subject.title}</a></h1>
+          {this.state.subject.sub}
+        </header>  
         <Toc data={this.state.contents}></Toc>
         <Content title={_title} desc={_desc}></Content>
       </div>      
