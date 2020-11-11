@@ -37,7 +37,7 @@ class App extends Component {
         </Subject> */}
         <header>
           <h1><a href="./" onClick={function(e){
-            alert('안녕!!');
+            alert('안녕!');
             e.preventDefault();
           }}>{this.state.subject.title}</a></h1>
           {this.state.subject.sub}
