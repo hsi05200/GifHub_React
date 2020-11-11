@@ -46,7 +46,7 @@ class App extends Component {
           {this.state.subject.sub}
         </header>  
         <Toc data={this.state.contents}></Toc>
-        <Content title={_title} desc={_desc}></Content>
+        <Content title={_title} desc={_desc}></Content> 
       </div>      
     );
   }
