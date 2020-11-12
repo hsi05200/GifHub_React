@@ -17,7 +17,8 @@ class App extends Component {
         {id:2, title:'CSS', desc:'CSS is for design'},
         {id:3, title:'JavaScript', desc:'JavaScript is for interactive'},
         {id:4, title:'React', desc:'React is for component'},
-        {id:5, title:'PHP', desc:'PHP is for programing'}
+        {id:5, title:'PHP', desc:'PHP is for programing'},
+        {id:6, title:'NodeJs', desc:'NodeJs is for programing'}
       ]
     }
   }
