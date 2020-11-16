@@ -7,8 +7,12 @@ class CreateContent extends Component {
         <h2>추가</h2>
         <form action="/create_process" method="post"
           onSubmit={function(e){
-            e.preventDefault();
-            alert('Submit!!');
+            e.preventDefault();            
+            this.props.onSubmit(
+              e.target.title.value,
+              e.target.desc.value
+            );
+            alert('목록추가완료!!');
           }.bind(this)}
         >
           <p>
