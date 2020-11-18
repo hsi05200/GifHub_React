@@ -61,12 +61,12 @@ class App extends Component {
         this.setState({
           contents:newContents
         });
-      }.bind(this)}></CreateContent>;
+      }.bind(this)}></CreateContent>; 
     }
     return (
       <div className="App">
         <Subject
-          title={this.state.subject.title}
+          title={this.state.subject.title} 
           sub={this.state.subject.sub}
           onChangePage={function () {
             this.setState({
