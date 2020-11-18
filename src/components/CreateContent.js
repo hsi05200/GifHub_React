@@ -12,7 +12,7 @@ class CreateContent extends Component {
               e.target.title.value,
               e.target.desc.value
             );
-            alert('목록추가완료!!');
+            // alert('목록추가완료!!');
           }.bind(this)}
         >
           <p>
