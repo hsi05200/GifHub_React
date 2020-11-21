@@ -7,10 +7,10 @@ class UpdateContent extends Component {
       title:this.props.data.title,
       desc:this.props.data.desc
     }
-    this.inputFormHandler = this.inputFormHandler.bind(this)
+    this.inputFormHandler = this.inputFormHandler.bind(this) //bind(this)의 중복을 없애기 위해 재정의
   }
-  inputFormHandler(e) {
-    this.setState({[e.target.name]:e.target.value});
+  inputFormHandler(e) { // state 값을 불러오기 위해 함수로 재정의
+    this.setState({[e.target.name]:e.target.value}); //e.target.name: 자신의 name값을 가져온다.
   }
   render() {    
     return (
@@ -31,8 +31,8 @@ class UpdateContent extends Component {
               name="title"
               placeholder="제목입력"
               style={{width:'342px'}}
-              value={this.state.title}
-              onChange={this.inputFormHandler}
+              value={this.state.title} // 이렇게 사용하면 읽기전용으로 수정불가
+              onChange={this.inputFormHandler} // 정의된 state의 함수를 사용함
               />
           </p>
           <p>
