@@ -4,6 +4,7 @@ class UpdateContent extends Component {
   constructor(props){
     super(props);
     this.state = {
+      id:this.props.data.id,
       title:this.props.data.title,
       desc:this.props.data.desc
     }
@@ -20,12 +21,14 @@ class UpdateContent extends Component {
           onSubmit={function(e){
             e.preventDefault();            
             this.props.onSubmit(
-              e.target.title.value,
-              e.target.desc.value
+              this.state.id,
+              this.state.title,
+              this.state.desc
             );            
           }.bind(this)}
         >
           <p>
+            <input type="hidden" name="id" value={this.state.id}></input>
             <input 
               type="text"
               name="title"
@@ -47,7 +50,7 @@ class UpdateContent extends Component {
              ></textarea>
           </p>
           <p>
-            <input type="submit"/>
+            <input type="submit" value="수정하기"/>
           </p>
         </form>
       </article>    

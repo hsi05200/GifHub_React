@@ -22,7 +22,7 @@ class CreateContent extends Component {
             <textarea cols="50" rows="5" type="text" name="desc" placeholder="내용입력"/>
           </p>
           <p>
-            <input type="submit"/>
+            <input type="submit" value="추가하기"/>
           </p>
         </form>
       </article>    
